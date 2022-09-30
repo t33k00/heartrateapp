@@ -14,7 +14,7 @@ function App() {
     const alaraja = (220-ika) * 0.65
     setYläraja(ylaraja)
     setAlaraja(alaraja)
-  }
+  }//laskufunktio
   
   return (
  <div id="content">
