@@ -3,9 +3,9 @@ import './App.css';
 
 function App() {
 
-  const [ika, setIka] = useState('')
-  const [yläraja, setYläraja] = useState('')
-  const [alaraja, setAlaraja] = useState('')
+  const [ika, setIka] = useState(0)
+  const [yläraja, setYläraja] = useState(0)
+  const [alaraja, setAlaraja] = useState(0)
 
 
   function laske(e){
@@ -25,7 +25,7 @@ function App() {
     </div>
     <div>
       <label> syke rajat</label>
-      <output> {alaraja}-{yläraja}</output>
+      <output> {alaraja.toFixed(0)}-{yläraja.toFixed(0)}</output>
     </div>
     <button> Laske</button>
   </form>
